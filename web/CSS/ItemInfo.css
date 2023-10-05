@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+.bodyShop {  
+    margin: 0 2rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    background-color: #e7e1c6c0; 
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    top: 0;   
+}
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+.header_logo {
+    margin-left: 3rem;
+    font-size: 1rem;
+    color: black;
+}
+.header_menu img{
+    width: 30%;
+}
+.header_search input{
+    padding-left: .5rem;
+    padding-right: 5rem;
+    border-radius: 10px;
+    border: none;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color: #cdc2ae;  
+    padding: 1.5rem;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+.item_order{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    margin-left: -1.8rem;
+}
+.item_order img{
+    width: 70%;
+}
+.item_order_info{
+    text-align: left;
+    margin-left: 3rem;
+}
+.item_order h4{
+    margin-top: 1rem;
+}
+.item_order_info_title h4{
+    font-weight: bold;
+}
+.item_order_img{
+    border: solid none 0.2rem;    
+    border-radius: 1rem;
+    box-shadow: 0 0 .6rem #888888;
+}
+.checked {
+    color: orange;
+}
+.item_order_review{
+    display: flex;
+}
+.item_order_review_info{
+    margin: 0 1rem 0 1rem;
+}
+.item_order_review div:nth-child(1), .item_order_review div:nth-child(3){
+    margin: 0;
+}
+.item_order_review div:nth-child(3){
+    border-left: solid black .1rem;
+    border-right: solid black .1rem;
+    padding: 0 1rem 0 1rem;
+    height: 2rem;
+}
+.item_order_price p:nth-child(1){
+    color: grey;
+    text-decoration: line-through;
+    margin: 0;
+}
+.item_order_price p:nth-child(2){
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.item_color_type{
+    display: flex; 
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* margin-left: -0.4rem; */
+}
+.item_color_opt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 2.6rem;
+}
+.item_color_opt_check{
+    border: 1px black solid;
+    border-radius: .7rem;
+    padding: .3rem;
+    height: 2.7rem;
+    width: 7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.item_color_opt div:hover {
+    background-color: #888888;
+    color: white;
+}
+.item_color_title{
+    border: none;
+    /* width: 8rem; */
+    width: 19%;
+    pointer-events: none;
+}
+.item_order_add{
+    display: flex;
+    width: fit-content;
+    border: solid .2rem black;
+    padding: .8rem;
+    padding-bottom: 2.5rem;
+    border-radius: 1rem;
+    height: 3rem;
+}
+.bx-message-alt-add{
+    font-size: 2.5rem;
+    margin-top: -.2rem;
+}
+.bx-package{
+    font-size: 2.5rem;
+    margin-top: -.4rem;
+}
+.item_order_add:hover{
+    background-color: #888888;
+    color: white;
+}
+.item_order_add_title{
+    margin-top: -0.1rem;
+    font-weight: bolder;
+}
+.item_quantity{
+    display: flex;
+    margin-bottom: 1rem;
+}
+/* .item_quantity_input input{
+    height: 2rem;
+    width: 3rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+} */
+.counter div{
+    width: 2rem;
+    text-align: center;
+}
+.addButton{
+    width: 100%;
+    height: 2rem;
+    border: none;
+}
+.counter{
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+    width: 7rem;
+    height: 2.3rem;
+    border: solid .2rem black;
+    /* border-radius: .8rem; */
+}
+.counter div:nth-child(2){
+    width: 3rem;
+    border-left: solid .2rem black;
+    border-right: solid .2rem black;
+}
+.item_descript{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    width: 100%;
+}
+.item_descript div:nth-child(1){
+    border: solid none 0.2rem;    
+    border-radius: 1rem;
+    box-shadow: 0 0 .6rem #888888; 
+    margin-left: 3rem;
+    margin-right: 6rem;
+}
+.ads{
+    border: solid none 0.2rem;    
+    border-radius: 1rem;
+    box-shadow: 0 0 .6rem #888888;
+    margin-right: 3rem;
+}
+.item_descript_info{
+    padding: 4rem;
+}
+.product_detail{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.product_detail_title{
+    padding-left: 0.8rem;
+    text-align: left;
+}
+.product_detail_title h4{
+    font-weight: bold;
+}
+.product_detail_table_info th{
+    font-weight: normal;
+    color: grey;
+}
+.product_detail_table_info{
+    /* width: 100%; */
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 10rem 2rem;
+}
+.product_detail_table{
+    /* margin: -1.5rem -16rem 0 -17.1rem; */
+    margin-left: -6.1rem;
+    margin-top: -2rem;
+}
+.product_descript_title{
+    padding-left: 3.8rem;
+    text-align: left;
+}
+.product_descript_title h4{
+    font-weight: bold;
+}
+.product_descript_info{
+    padding: 0 6.9rem;
+    margin-bottom: 3rem;
+}
+.product_descript{
+    margin-bottom: 2rem;
+}
+.product_review_title{
+    padding-left: 3.8rem;
+    text-align: left;
+}
+.product_review_title h4{
+    font-weight: bold;
+}
+.product_review_result{
+    display: flex;
+    margin-left: 7.2rem;
+}
+.product_review_result_info{
+    margin: 0 1rem 0 1rem;
+}
+.product_review_result_info div:last-child{
+    margin: 0;
+}
+.product_review_result div:nth-child(1), .item_order_review div:nth-child(3){
+    margin: 0;
+}
+.product_review_result div:nth-child(3){
+    border-left: solid black .1rem;
+    padding: 0 1rem 0 1rem;
+    height: 2rem;
+    margin: 0;
+}
+.product_review_point{
+    margin-left: 6.8rem;
+}
+.product_review_point p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.product_review_point p>span{
+    font-size: 4rem;
+}
+.product_review_2{
+    padding-left: 7rem;
+}
+.product_review_2 div:nth-child(1){
+    box-shadow: none;
+    margin: 0;
+}
+.point{
+    margin-top: 1rem;
+}
+.progress{
+    width: 20rem;
+    height: 0.3rem;
+    margin-top: .7rem;
+}
+.progress-block__line{
+    display: flex;
+    margin-bottom: -.5rem;
+    margin-left: -.6rem;
+}
+.progress-block__line {
+    margin-top: 0.27rem;
+    padding: 0 0.5rem;
+}
+.text{
+    margin-left: .5rem;
+}
+.product_review_3{
+    margin-left: 6.8rem;
+}
+/* .product_review_3 input{
+    width: 70%;
+    height: 5rem;
+    border-radius: 1rem;
+    border: solid black .1rem;
+} */
+textarea[type="Content"]::placeholder{
+    text-align: center;
+    padding-top: 1rem;
+}
+textarea[type="Content"]{
+    margin-left: 3rem;
+    padding: 1rem;
+}
+.progress-block__line>.fa{
+    margin-top: .3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.form-group_button{
+    display: flex;
+    margin-left: 0;
+    margin-top: -1rem;
+}
+.form-group_button button{
+    padding: .5rem 1rem;
+    justify-content: center;
+    /* border-radius: 12%;
+    border: none; */
+}
+.flashSale_item-image{
+    width: 100%;
+}
+.iphone_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;    
+}
+.iphone_list__item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px rgb(215, 208, 208);
+    text-align: center;
+    padding: 1.5rem;
+}
+.iphone_list_item-content--body p:nth-child(1){
+    font-style: italic; 
+    color: rgba(128, 128, 128, 0.5);
+}
+.iphone_list_item-content--body p:nth-child(2){
+    color: red;
+    font-size: 2rem;
+    font-weight: 550;
+}
+.iphone_list__item img {
+    width: 100%;
+}
+.iphone_list__item-content{
+    padding: .5rem;    
+}
+.iphone_list__item___title{
+    padding-left: 24%;
+}
+.iphone_list__item___title h4{
+    font-weight: bold;
+}
+#flashSale_item-content--start {
+    font-size: 2rem;
+    color: #ff6b29;
+}
+#flashSale_item-content--nonstart {
+    font-size: 2rem;
+    color: grey;
+}
+#flashSale_item-content--menthod {
+    border-radius: 10px ;
+    border: 1px solid grey;
+    font-size: 1rem;    
+    color: rgb(57, 53, 53);
+    padding: .3rem;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

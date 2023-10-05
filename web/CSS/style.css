@@ -1,0 +1,444 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 16, 2023, 3:46:58 PM
+    Author     : User
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Press+Start+2P&display=swap');
+
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Aldrich', sans-serif;  
+}
+html{
+    overflow-x: hidden;
+}
+.bodyShop {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-left: 25px;   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 19, 20);
+    border-bottom: .2em solid rgba(0, 0, 0, 0.2);
+    padding: 1.2%;
+    color: green;
+}
+.header_left {
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu {
+    display: flex;
+    align-items: center;
+
+}
+.header_logo {
+    margin-left: 2em;
+    font-size: 2em;
+    color: white;
+}
+/*fixed*/
+.header_logo:hover {
+    color: #90a290; 
+}
+.header_search{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+.header_menu i{
+    font-size: 3em;
+}
+.menu_Icon{
+    margin-top: 0;
+}
+.header_search input{
+    padding-left: .5em;
+    padding-right: 25em;
+    border-radius: 30px;
+    border: none;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.header_search i{
+    font-size: 1.5em;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 2.5%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.header_infor {
+    display: flex;    
+}
+.header_infor-no1 {
+    margin-right: 3em;
+}
+.header_infor-no1 i{
+    font-size: 2em;
+}
+.header_infor-no1 a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+.header_infor-no1 a:hover{
+    color: #90a290;
+}
+.header_search-list--item-content a:hover{
+    color: green;     
+    text-decoration: none;
+}
+.header_search-list--item-content a{
+    text-decoration: none;
+    color: grey;
+}
+.flashSale {
+    background-color: #F1F6F9;
+    border: none;
+    border-radius: 30px;
+}
+.flashSale h4{
+    margin-top: 1rem;
+    font-size: inherit;
+}
+#flashSale_head-icon {
+    font-size: 3rem;
+}
+.flashSale_item-content--body {
+    margin-top: 2rem;
+}
+#flashSale_item-content--start {
+    font-size: 2rem;
+    color: #ff6b29;
+}
+.flashSale_item {
+    margin: 0 1rem 0 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.flashSale_list{
+    justify-content: center;
+}
+.flashSale_list .flashSale_item .flashSale_item-content p:nth-child(1){
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.5);
+}
+.flashSale_list .flashSale_item .flashSale_item-content p:nth-child(2){
+    color: red;
+    font-size: 2rem;
+    font-weight: 550;
+}
+#flashSale_item-content--menthod {
+    border-radius: 10px ;
+    border: 1px solid grey;
+    font-size: 1rem;
+    color: rgb(57, 53, 53);
+    padding: .3rem;
+    font-style: italic;
+}
+.flashSale_item img{
+    width: 100%;
+}
+.flashSale_item {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px rgb(215, 208, 208);
+    text-align: center;
+    width: 12%;
+}
+.flashSale_item-image{
+
+}
+.flashSale_item-content--body{
+    text-align: center;
+
+}
+.flashSale_item-content{
+    padding: 1rem 1rem;
+
+}
+.flashSale_no1{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+.flashSale_list{
+    display: flex;
+    padding: 1rem;
+}
+
+/*
+    phan iphone
+*/
+
+.iphone {
+    margin-top: 2rem;
+    background-color: #F1F6F9;
+    border-radius: 30px;
+}
+.iphone_header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.iphone_list {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding-left: 11rem;
+    padding-bottom: 3%;
+}
+.iphone_list__item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    width: 12%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px rgb(215, 208, 208);
+    text-align: center;
+}
+.iphone_list_item-content--body p:nth-child(1){
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.5);
+}
+.iphone_list_item-content--body p:nth-child(2){
+    color: red;
+    font-size: 2rem;
+    font-weight: 550;
+}
+.iphone_list__item img {
+    width: 100%;
+}
+.iphone_list__item-content{
+    padding: .5rem;
+}
+
+/*
+    phan footer
+*/
+.footer{
+
+    color: white;
+    background-color: rgb(19, 19, 20);
+    padding: 1.5rem;
+    margin-top: 2.5rem;    
+}
+.footer_content{
+    padding: 10px 0;
+}
+.slideshow_button{
+    display: flex;
+    align-items: center;
+}
+.checked {
+    color: orange;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* màu của menubar */
+    background-color:  rgb(87, 83, 83); 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+.sidenav_x {
+    background-color: #cdc2ae ;
+}
+.sidenav a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.menthod  {
+    border-radius: 10px ;
+    border: 2px solid red;
+    text-align: center;
+    color: red;
+}
+.star {
+    color: rgb(204, 201, 10);
+}
+.logo span i {
+    font-size: 50px;
+}
+.logoapp img{
+    width: 150px;
+}
+.footer_left {
+    left: 20px;
+}
+.info{
+    left: 30px;
+}
+.support span img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(176, 176, 182);
+    border-radius: 10px;
+}
+.name h1 {
+    padding-left: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px
+}
+#menuIcon{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 10px;
+}
+#menuIcon i{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menuIcon a {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+#menuIcon a img {
+    width: 100%;
+    border-radius: 10px;
+}
+.footer-iconTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-radius: .8rem;
+    transition: .5s ease;
+    float: right;
+    background-color: #d6d2d2;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #ffcccc;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: black;
+}
+
+.header_search-list {
+    justify-content: center;
+    width: 410px;
+    height: 400px;
+    background-color: whitesmoke;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+.header_search-list--content:hover {
+    background-color: #cdc9c933;
+}
+.header_search-list--item {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.header_search-list--content{
+    border-bottom: 1px solid #cccccc;
+}
+.header_search-list--item:hover {
+
+}
+.header_search-list--item---image{
+    width: 70px;
+    overflow: hidden;
+}
+.header_search-list--item---image img{
+    width: 100%;
+}
+.header_search-list--item-content {
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.header_search-list--item-content p:nth-child(1){
+    font-weight: bold;
+}

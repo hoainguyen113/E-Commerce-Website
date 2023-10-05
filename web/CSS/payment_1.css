@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mm {
+    margin: auto;
+}
+
+.ml-16 {
+    margin-left: 16px !important;
+}
+.text-none {
+    text-decoration: none !important;
+}
+.lh-4 {
+    line-height: 4px !important;
+}
+.lh-16 {
+    line-height: 16px !important;
+}
+
+.m-8 {
+    margin: 8px !important;
+}
+.pl-15 {
+    padding-left: 15px !important;
+}
+.pr-15  {
+    padding-right: 15px !important;
+}
+.pr-30  {
+    padding-right: 30px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-28 {
+    margin-top: 28px !important;
+}
+.pd-8 {
+    padding: 8px !important;
+}
+.pd-16 {
+    padding: 16px !important;
+}
+.pd-32 {
+    padding: 32px !important;
+}
+.ptb-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+.plr-32 {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+.flex-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.go--left {
+    float: left !important;
+}
+.go--right {
+    float: right !important;
+}
+.payment--box {
+    margin-top: 80px;
+    position: relative;
+}
+
+.payment--header {
+    padding: 8px;
+    background-color: orange;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.back-home--header {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.back-home--header:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.payment--header,
+.payment--header>p {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 0;
+    font-weight: bold;
+    width: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.payment--header>.left-arrow:hover {
+    cursor: pointer;
+}
+
+.payment--address {
+    overflow-y: hidden;
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.payment--infor{
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 8px;
+    width: 100%;    
+}
+.payment--confirm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.payment--confirm--btn {
+    display: inline-block;
+    width: 100%;
+    margin: 8px auto;
+    text-align: center;
+    background-color: red;
+    line-height: 46px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.payment--confirm--btn:hover {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff0000;
+}
+#card--payment--form {
+    display: none;
+}
+#momo--payment--btn {
+    display: none;
+}
+#tax--infor{
+    display: none;
+}
